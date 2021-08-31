@@ -7,9 +7,8 @@ massetetthet = x/y
 print('massetetthet av kuben er %.3f kg/m^3' % massetetthet)
 
 """
-ekstern35:desktop lisa$ Python massdensity.py
+Terminal> Python massdensity.py
 massetetthet av kuben er 21450.000 kg/m^3
-ekstern35:desktop lisa$
 """
 #Massetetthet (i kg /m 3)
 #Polystyren(lav tetthet) = 20
