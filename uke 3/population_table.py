@@ -7,29 +7,32 @@ t = 0      #initial value of time
 n = 12     #number of elements in the list
 C = (B/N-1)/(np.exp(-k*t)) #C value from population.py
 
-N_list = [48/n*i for i in range(n+1)] #lager N_list
+t_list = [48/n*i for i in range(n+1)] #lager t_list
 
 def population(t): #def. en funksjon som returnerer formelen fra population.py
     return B/(1+C*np.exp(-k*t))
 
-t_list = [population(t) for t in N_list] #t_list
+N_list = [population(t) for t in t_list] #N_list
+
+print('Populasjon vekst:    Timer:')
 
 for N, t in zip(N_list, t_list): #zipper listene og printer dem
-    print('Populasjon vekst: %5.0f Timer: %2.0f' %(N, t))
+    print('%2.f'%N,'               ','%.f'%t)
 
 """
 Terminal>population_table.py
-Populasjon vekst:     0 Timer: 5000
-Populasjon vekst:     4 Timer: 9913
-Populasjon vekst:     8 Timer: 17749
-Populasjon vekst:    12 Timer: 27526
-Populasjon vekst:    16 Timer: 36580
-Populasjon vekst:    20 Timer: 42924
-Populasjon vekst:    24 Timer: 46552
-Populasjon vekst:    28 Timer: 48390
-Populasjon vekst:    32 Timer: 49263
-Populasjon vekst:    36 Timer: 49666
-Populasjon vekst:    40 Timer: 49849
-Populasjon vekst:    44 Timer: 49932
-Populasjon vekst:    48 Timer: 49970
+Populasjon vekst:    Timer:
+5000                 0
+9913                 4
+17749                 8
+27526                 12
+36580                 16
+42924                 20
+46552                 24
+48390                 28
+49263                 32
+49666                 36
+49849                 40
+49932                 44
+49970                 48
 """
