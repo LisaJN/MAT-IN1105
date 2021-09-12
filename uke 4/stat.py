@@ -39,3 +39,7 @@ def test_standard_deviation():
     msg = f'computed area={computed} != {expected}(expected)'
     assert success, msg
 test_standard_deviation()
+
+"""
+Terminal>stat.py
+"""
