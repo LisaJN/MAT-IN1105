@@ -2,7 +2,6 @@
 import numpy as np
 
 h1,h2,h3 = [0,0],[1,0],[0,2]
-vertices = [h1,h2,h3]
 
 def triangle_area(vertices):
     """
@@ -27,3 +26,7 @@ def test_triangle_area():
     msg = f'computed area={computed} != {expected}(expected)'
     assert success, msg
 test_triangle_area()
+
+"""
+Terminal>triangle_area.py 
+"""
